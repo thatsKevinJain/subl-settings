@@ -1,0 +1,31 @@
+                    ======================                            [t] toggle package           [r] refresh view
+                           PACKAGES                                   [h] open home page           [?] help    
+                    ======================                            [i] show info
+===============================================================================================================================
+    ✔ A File Icon                                                |    ✔ Advanced CSV                                          
+    ✔ AdvancedNewFile                                            |    ✔ ARM Assembly                                          
+    ✔ Astro                                                      |    ✔ Babel                                                 
+    ✔ Debugger                                                   |    ✔ DistractionFreeWindow                                 
+    ✔ Dockerfile Syntax Highlighting                             |    ✔ Expand Selection to Function (JavaScript)             
+    ✔ Find++                                                     |    ✔ GitSavvy                                              
+    ✔ Gofmt                                                      |    ✔ Golang                                                
+    ✔ HttpUnit                                                   |    ✔ InlineOutline                                         
+    ✔ JsDebuggr                                                  |    ✔ JsFormat                                              
+    ✔ JsPrettier                                                 |    ✔ LSP                                                   
+    ✔ LSP-basedpyright                                           |    ✔ LSP-css                                               
+    ✔ LSP-dockerfile                                             |    ✔ LSP-eslint                                            
+    ✔ LSP-gopls                                                  |    ✔ LSP-json                                              
+    ✔ LSP-rust-analyzer                                          |    ✔ LSP-typescript                                        
+    ✔ LSP-yaml                                                   |    ✔ Markdown Extended                                     
+    ✔ MarkdownCodeExporter                                       |    ✔ MarkdownEditing                                       
+    ✔ MarkdownPreview                                            |    ✔ MonokaiFree                                           
+    ✔ Origami                                                    |    ✔ Package Control                                       
+    ✔ PackagesUI                                                 |    ✔ Python 3                                              
+    ✔ Quokka                                                     |    ✔ Rust Enhanced                                         
+    ✔ SaltStack-related syntax highlighting and snippets         |    ✔ Sesame                                                
+    ✔ SideBarTools                                               |    ✔ SublimeCodeIntel                                      
+    ✔ SublimeLinter                                              |    ✔ SublimeLinter-contrib-sqlint                          
+    ✔ SublimeLinter-flake8                                       |    ✔ Tailwind CSS                                          
+    ✔ Terminus                                                   |    ✔ Terraform                                             
+    ✔ Text Pastry                                                |    ✔ TOML                                                  
+    ✔ x86 and x86_64 Assembly                                    |
