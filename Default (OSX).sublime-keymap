@@ -1,0 +1,35 @@
+[
+  {
+    "keys": [
+      "command+l"
+    ],
+    "command": "reindent"
+  },
+  {
+    "keys": [
+      "ctrl+shift+s"
+    ],
+    "command": "auto_save"
+  },
+  {
+    "keys": [
+      "ctrl+alt+f"
+    ],
+    "command": "js_format"
+  },
+  {
+    "keys": [
+      "command+j"
+    ],
+    "command": "toggle_terminus_panel",
+    "args": {
+        "post_window_hooks": [
+            ["carry_file_to_pane", {"direction": "down"}]
+        ]
+    }
+  },
+  { "keys": ["super+alt+o"], "command": "sesame_open" },
+  { "keys": ["super+alt+a"], "command": "sesame_add" },
+  { "keys": ["super+alt+r"], "command": "sesame_remove" },
+  { "keys": ["super+alt+s"], "command": "sesame_switch" }
+]
