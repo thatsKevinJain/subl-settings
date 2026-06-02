@@ -10,7 +10,7 @@
     "auto_complete_selector": "source, text",
     "scroll_past_end": true,
     "font_face": "JetBrains Mono",
-    "font_size": 14,
+    "font_size": 12,
     "font_options": ["no_calt"],
     "material_theme_accent_orange": true,
     "line_padding_top": 2,
@@ -25,6 +25,8 @@
     "sesame.depth": "1",
     "index_files": false,
     "color_scheme": "MonokaiFreeGruvboxDark.sublime-color-scheme",
-    "theme": "rsms-adaptive.sublime-theme",
+    "theme": "ayu-dark.sublime-theme",
     "update_check": true,
+    "git_binary": "/usr/bin/git",
+    "side_bar_layout": "locations_as_column",
 }
