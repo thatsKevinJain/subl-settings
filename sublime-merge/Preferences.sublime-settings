@@ -1,0 +1,12 @@
+{
+	"font_face": "Jetbrains Mono",
+	"font_size": 13,
+    "theme": "Solarized Light.sublime-theme",
+	"light_theme": "Solarized Light.sublime-theme",
+	"dark_theme": "Merge Dark.sublime-theme",
+	"color_scheme": "Solarized Light.sublime-color-scheme",
+	"light_color_scheme": "Solarized Light.sublime-color-scheme",
+	"dark_color_scheme": "Mariana.sublime-color-scheme",
+	"diff_style": "side-by-side",
+	"git_binary": "/Users/kevinvikas/.git-ai/bin/git",
+}

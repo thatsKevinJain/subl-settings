@@ -1,0 +1,181 @@
+// Solarized Light for Sublime Merge.
+//
+// Extends the built-in light theme and remaps its palette onto Solarized
+// (https://ethanschoonover.com/solarized/). Textures come from Theme - Merge,
+// so only colors are overridden here.
+//
+// Variable reference: Packages/Theme - Merge/Merge.sublime-theme
+{
+	"extends": "Merge.sublime-theme",
+	"variables":
+	{
+		// Solarized monotones
+		"base03": "#002b36",
+		"base02": "#073642",
+		"base01": "#586e75",
+		"base00": "#657b83",
+		"base0": "#839496",
+		"base1": "#93a1a1",
+		"base2": "#eee8d5",
+		"base3": "#fdf6e3",
+
+		// Solarized accents, mapped onto the base theme's palette names
+		"yellow": "#b58900",
+		"orange": "#cb4b16",
+		"red": "#dc322f",
+		"magenta": "#d33682",
+		"purple": "#6c71c4",
+		"blue": "#268bd2",
+		"teal": "#2aa198",
+		"green": "#859900",
+
+		// Accents blended 25% onto base3
+		"light_blue": "#c7dbdf",
+		"light_red": "#f5c5b6",
+		"light_orange": "#f0cbb0",
+		"light_green": "#dfdfaa",
+		"light_yellow": "#ebdbaa",
+
+		// UI surfaces, lightest to darkest:
+		// detail panel (base3, from the color scheme) > commit list > side bar > header > tab bar
+		"light_gray": "#f6efdc",
+		"light_gray-medium": "var(base2)",
+		"light_gray-dark": "#dad8ca",
+		"medium_gray-light": "#c0c4bb",
+		"medium_gray": "var(base0)",
+		"medium_gray-dark": "var(base00)",
+		"dark_gray-light": "var(base01)",
+		"dark_gray": "var(base02)",
+
+		"text": "var(base01)",
+
+		// Header
+		"header_fg": "var(base02)",
+		"icon_button_fg": "var(base02)",
+		"info-progress_bar_bg": "var(light_gray-dark)",
+		"info-progress_bar_fg": "var(base1)",
+
+		// Focus highlight
+		"focus_highlight_color": "color(var(blue) a(0.7))",
+
+		// Location bar
+		"disclosure_fg": "var(base02)",
+		"submodule_stat_fg": "var(base3)",
+
+		// Commit list
+		// Also used for the selected row
+		"commit_row_bg-hover": "#d6e3e0",
+		"commit_summary_fg-primary": "var(base02)",
+		"commit_summary_fg-secondary": "var(base00)",
+
+		"commit_edge_0": "var(blue)",
+		"commit_edge_1": "var(purple)",
+		"commit_edge_2": "var(magenta)",
+		"commit_edge_3": "var(orange)",
+		"commit_edge_4": "var(green)",
+		"commit_edge_5": "var(teal)",
+
+		// Detail panel
+		"field_name_fg": "var(base0)",
+		"author_fg": "var(base00)",
+		"terminator_fg": "var(base1)",
+
+		// Annotations
+		"commit_annotation_fg_inverted": "var(base3)",
+		"commit_annotation_bg": "color(var(blue) a(0.12))",
+
+		"tag_ann_fg": "#7a5c00",
+		"tag_ann_bg": "var(light_yellow)",
+
+		"stash_ann_bg": "color(var(blue) a(0.2))",
+
+		"file_ann_fg": "var(base02)",
+
+		// Diff headers
+		"hunk_button_fg": "var(base01)",
+		"hunk_header_bg": "color(var(light_blue) l(+ 7%))",
+		"untracked_header_bg": "var(base2)",
+		"untracked_header_bg-hover": "color(var(base2) l(+ 3%))",
+		"staged_icon_fg": "var(blue)",
+		"renamed_file_inserted": "var(green)",
+		"renamed_file_deleted": "var(red)",
+
+		// File badges
+		"file_badge_modified_fg": "var(blue)",
+		"file_badge_unmerged_fg": "#844021",
+		"file_badge_untracked_bg": "var(base1)",
+		"file_badge_untracked_fg": "var(base3)",
+		"file_badge_staged_bg": "#92c0da",
+		"file_badge_staged_fg": "#11567c",
+
+		// Buttons
+		"highlighted_button_light_bg": "#cdd188",
+		"highlighted_button_dark_bg": "#b5be5b",
+		"highlighted_button_light_fg": "var(base02)",
+		"highlighted_button_dark_fg": "var(base02)",
+
+		"hazard_button_fg": "var(base3)",
+
+		// Radio buttons and checkboxes
+		"radio_back": "var(base3)",
+		"radio_border-unselected": "var(base1)",
+		"checkbox_back": "var(base3)",
+		"checkbox_border-unselected": "var(base1)",
+		"checkbox-disabled": "var(base1)",
+
+		// Progress bar
+		"progress_bg": "color(var(base01) a(0.08))",
+
+		// Quick panel
+		"quick_panel_fg": "var(base01)",
+		"quick_panel_fg-match": "var(blue)",
+		"quick_panel_fg-selected": "var(base02)",
+		"quick_panel_fg-selected-match": "var(blue)",
+		"quick_panel_path_fg": "var(base0)",
+		"quick_panel_path_fg-match": "var(base00)",
+		"quick_panel_path_fg-selected": "var(base00)",
+		"quick_panel_path_fg-selected-match": "var(base01)",
+
+		// Tool tips
+		"tool_tip_bg": "var(base3)",
+		"tool_tip_fg": "var(base01)",
+		"tool_tip_border": "var(base1)",
+
+		// Hints
+		"hint_bg": "#f0e2ba",
+		"hint_fg": "var(base02)",
+		"failed_label_fg": "var(base3)",
+
+		// Command palette
+		"preview_fg": "var(base02)",
+
+		// Repository tabs
+		"repository_tab_bar_border_bg": "var(base01)",
+	},
+	"rules":
+	[
+		{
+			"class": "tab_close_button",
+			"settings": ["show_tab_close_buttons"],
+			"layer0.tint": "var(base01)",
+		},
+		{
+			"class": "diff_text_control",
+			"line_selection_color": "color(var(blue) a(0.06))",
+			"line_selection_border_color": "color(var(blue) a(0.5))",
+		},
+		{
+			"class": "blame_text_control",
+			"settings": ["!kelly_colors"],
+			"num_colors": 8,
+			"color0": "var(blue)",
+			"color1": "var(purple)",
+			"color2": "var(magenta)",
+			"color3": "var(red)",
+			"color4": "var(orange)",
+			"color5": "var(yellow)",
+			"color6": "var(green)",
+			"color7": "var(teal)",
+		},
+	]
+}

@@ -1,0 +1,37 @@
+{
+	// Text inputs: search box, commit message, filters, quick panel
+	"name": "Solarized Light Widgets",
+	"globals":
+	{
+		"foreground": "#586e75",
+		"background": "#fdf6e3",
+		"caret": "#586e75",
+		"line_highlight": "#eee8d5",
+		"selection": "#d7d6c8",
+		"selection_border": "#93a1a1",
+		"inactive_selection": "#eee8d5"
+	},
+	"rules":
+	[
+		{
+			"scope": "comment",
+			"foreground": "#93a1a1"
+		},
+		{
+			"scope": "keyword, storage",
+			"foreground": "#859900"
+		},
+		{
+			"scope": "constant",
+			"foreground": "#d33682"
+		},
+		{
+			"scope": "string",
+			"foreground": "#2aa198"
+		},
+		{
+			"scope": "constant.character.escape",
+			"foreground": "#dc322f"
+		}
+	]
+}

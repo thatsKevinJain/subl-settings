@@ -1,0 +1,316 @@
+{
+	// Solarized Light, tuned for Sublime Merge diffs.
+	// Palette and usage: https://ethanschoonover.com/solarized/
+	// Body text is base00 on base3; base01 is the emphasized tone.
+	"name": "Solarized Light",
+	"author": "Kevin Vikas",
+	"variables":
+	{
+		"base03": "#002b36",
+		"base02": "#073642",
+		"base01": "#586e75",
+		"base00": "#657b83",
+		"base0": "#839496",
+		"base1": "#93a1a1",
+		"base2": "#eee8d5",
+		"base3": "#fdf6e3",
+
+		"yellow": "#b58900",
+		"orange": "#cb4b16",
+		"red": "#dc322f",
+		"magenta": "#d33682",
+		"violet": "#6c71c4",
+		"blue": "#268bd2",
+		"cyan": "#2aa198",
+		"green": "#859900",
+
+		// Accents blended onto base3. Line backgrounds are kept faint so
+		// syntax colors stay readable; ".char" marks the changed words.
+		"inserted_line": "#edeac5",
+		"inserted_char": "#d9da9f",
+		"deleted_line": "#f9e0cf",
+		"deleted_char": "#f5c5b6",
+
+		"selection": "#d7d6c8"
+	},
+	"globals":
+	{
+		"foreground": "var(base00)",
+		"background": "var(base3)",
+		"accent": "var(blue)",
+		"caret": "var(base01)",
+		"block_caret": "color(var(base01) alpha(0.3))",
+		"invisibles": "var(base1)",
+		"line_highlight": "var(base2)",
+		"selection": "var(selection)",
+		"selection_border": "var(base1)",
+		"inactive_selection": "var(base2)",
+		"misspelling": "var(red)",
+		"shadow": "color(var(base01) alpha(0.25))",
+		"gutter_foreground": "var(base1)",
+		"guide": "var(base2)",
+		"active_guide": "var(base1)",
+		"stack_guide": "color(var(base1) alpha(0.5))",
+		"highlight": "var(yellow)",
+		"find_highlight": "var(yellow)",
+		"find_highlight_foreground": "var(base3)",
+		"brackets_options": "underline",
+		"brackets_foreground": "var(orange)",
+		"bracket_contents_options": "underline",
+		"bracket_contents_foreground": "var(blue)",
+		"tags_options": "stippled_underline",
+		"tags_foreground": "var(blue)"
+	},
+	"rules":
+	[
+		// Diffs. foreground_adjust darkens syntax colors on tinted lines,
+		// since Solarized accents sit at the same lightness as the backgrounds.
+		{
+			"scope": "diff.inserted",
+			"background": "var(inserted_line)",
+			"foreground_adjust": "l(- 10%)"
+		},
+		{
+			"scope": "diff.inserted.char",
+			"background": "var(inserted_char)",
+			"foreground_adjust": "l(- 18%)"
+		},
+		{
+			"scope": "diff.deleted",
+			"background": "var(deleted_line)",
+			"foreground_adjust": "l(- 10%)"
+		},
+		{
+			"scope": "diff.deleted.char",
+			"background": "var(deleted_char)",
+			"foreground_adjust": "l(- 18%)"
+		},
+
+		// Unified diff / patch text (git output, .diff files)
+		{
+			"scope": "meta.diff, meta.diff.header",
+			"foreground": "var(blue)"
+		},
+		{
+			"scope": "meta.diff.range, meta.toc-list.line-number.diff",
+			"foreground": "var(violet)"
+		},
+		{
+			"scope": "markup.inserted",
+			"foreground": "var(green)"
+		},
+		{
+			"scope": "markup.deleted",
+			"foreground": "var(red)"
+		},
+		{
+			"scope": "markup.changed",
+			"foreground": "var(yellow)"
+		},
+
+		// Messages (git output, console)
+		{
+			"scope": "message.error",
+			"foreground": "var(red)"
+		},
+		{
+			"scope": "message.warning",
+			"foreground": "var(orange)"
+		},
+		{
+			"scope": "message.info",
+			"foreground": "var(blue)"
+		},
+		{
+			"scope": "constant.numeric.line-number.match",
+			"foreground": "var(red)"
+		},
+
+		// Syntax, following the canonical Solarized groups:
+		// comment base1, constant cyan, identifier blue, statement green,
+		// preproc orange, type yellow, special red, underlined violet
+		{
+			"name": "Comment",
+			"scope": "comment, punctuation.definition.comment",
+			"foreground": "var(base1)",
+			"font_style": "italic"
+		},
+		{
+			"name": "String",
+			"scope": "string",
+			"foreground": "var(cyan)"
+		},
+		{
+			"name": "String escape",
+			"scope": "constant.character.escape, string.regexp constant.character",
+			"foreground": "var(red)"
+		},
+		{
+			"name": "Regex",
+			"scope": "string.regexp",
+			"foreground": "var(red)"
+		},
+		{
+			"name": "Number",
+			"scope": "constant.numeric",
+			"foreground": "var(magenta)"
+		},
+		{
+			"name": "Built-in constant",
+			"scope": "constant.language",
+			"foreground": "var(magenta)"
+		},
+		{
+			"name": "User-defined constant",
+			"scope": "constant.character, constant.other",
+			"foreground": "var(violet)"
+		},
+		{
+			"name": "Keyword",
+			"scope": "keyword - keyword.operator, keyword.operator.word",
+			"foreground": "var(green)"
+		},
+		{
+			"name": "Import / preprocessor",
+			"scope": "keyword.control.import, keyword.control.include, meta.preprocessor, keyword.other.use, keyword.declaration.import",
+			"foreground": "var(orange)"
+		},
+		{
+			"name": "Operator",
+			"scope": "keyword.operator - keyword.operator.word",
+			"foreground": "var(base01)"
+		},
+		{
+			"name": "Storage",
+			"scope": "storage, keyword.declaration",
+			"foreground": "var(green)"
+		},
+		{
+			"name": "Storage type",
+			"scope": "storage.type",
+			"foreground": "var(yellow)"
+		},
+		{
+			"name": "Function definition",
+			"scope": "entity.name.function",
+			"foreground": "var(blue)"
+		},
+		{
+			"name": "Type definition",
+			"scope": "entity.name.class, entity.name.struct, entity.name.enum, entity.name.union, entity.name.trait, entity.name.interface, entity.name.type, entity.name.impl, entity.other.inherited-class",
+			"foreground": "var(yellow)"
+		},
+		{
+			"name": "Other definitions",
+			"scope": "entity.name.constant, entity.name.namespace, entity.name.module",
+			"foreground": "var(orange)"
+		},
+		{
+			"name": "Language variable",
+			"scope": "variable.language",
+			"foreground": "var(orange)"
+		},
+		{
+			"name": "Function call",
+			"scope": "variable.function, support.function, support.macro, variable.annotation",
+			"foreground": "var(blue)"
+		},
+		{
+			"name": "Library type",
+			"scope": "support.type, support.class",
+			"foreground": "var(yellow)"
+		},
+		{
+			"name": "Library constant",
+			"scope": "support.constant",
+			"foreground": "var(violet)"
+		},
+		{
+			"name": "Member / property",
+			"scope": "variable.other.member, variable.other.property, variable.member",
+			"foreground": "var(base01)"
+		},
+		{
+			"name": "Mapping key",
+			"scope": "meta.mapping.key string, support.type.property-name, entity.name.tag.yaml, entity.name.key, meta.object-literal.key",
+			"foreground": "var(blue)"
+		},
+		{
+			"name": "Tag",
+			"scope": "entity.name.tag",
+			"foreground": "var(blue)"
+		},
+		{
+			"name": "Tag attribute",
+			"scope": "entity.other.attribute-name",
+			"foreground": "var(yellow)"
+		},
+		{
+			"name": "CSS selector",
+			"scope": "entity.other.attribute-name.class.css, entity.other.attribute-name.id.css",
+			"foreground": "var(green)"
+		},
+		{
+			"name": "Punctuation",
+			"scope": "punctuation.definition.tag, punctuation.section.embedded",
+			"foreground": "var(base1)"
+		},
+		{
+			"name": "Invalid",
+			"scope": "invalid",
+			"foreground": "var(base3)",
+			"background": "var(red)"
+		},
+		{
+			"name": "Invalid deprecated",
+			"scope": "invalid.deprecated",
+			"foreground": "var(base3)",
+			"background": "var(orange)"
+		},
+
+		// Markup
+		{
+			"scope": "markup.heading",
+			"foreground": "var(blue)",
+			"font_style": "bold"
+		},
+		{
+			"scope": "markup.heading punctuation.definition.heading",
+			"foreground": "var(orange)"
+		},
+		{
+			"scope": "markup.bold",
+			"font_style": "bold"
+		},
+		{
+			"scope": "markup.italic",
+			"font_style": "italic"
+		},
+		{
+			"scope": "markup.underline",
+			"font_style": "underline"
+		},
+		{
+			"scope": "markup.underline.link, string.other.link",
+			"foreground": "var(violet)"
+		},
+		{
+			"scope": "markup.raw",
+			"foreground": "var(cyan)",
+			"background": "color(var(base2) alpha(0.6))"
+		},
+		{
+			"scope": "markup.quote",
+			"foreground": "var(base1)",
+			"font_style": "italic"
+		},
+		{
+			"scope": "markup.list punctuation.definition.list_item, markup.list.numbered.bullet",
+			"foreground": "var(orange)"
+		},
+		{
+			"scope": "punctuation.definition.thematic-break",
+			"foreground": "var(base1)"
+		}
+	]
+}
